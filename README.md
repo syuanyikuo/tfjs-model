@@ -1,9 +1,16 @@
 # tfjs_model
 
-# 使用方式
-Step 1
-下載: [tampermonkey](https://chromewebstore.google.com/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+# 載入模型
+```
+let model
 
-Step 2
-將代碼新增至tampermonkey的腳本
+try{
+    model = await tf.loadLayersModel('localstorage://CaptchaModel');
+    console.log('Load local model')
+}catch(event){
+    model = await tf.loadLayersModel(tf.io.browserHTTPRequest('https://raw.githubusercontent.com/syuanyikuo/tfjs_model/main/tixcraft/model.json'));
+    console.log('Load github model')
+    await model.save('localstorage://CaptchaModel');
+}
+```
 
