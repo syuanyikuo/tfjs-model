@@ -10,7 +10,6 @@
 
 # Load model
 
-載入模型
 ```
 let model
 
@@ -25,7 +24,6 @@ try{
 ```
 
 # Code
-將圖繪製在canvas上，使用opencv處理，轉成array格式後預測驗證碼
 
 ```
 var ENG = 'abcdefghijklmnopqrstuvwxyz'
