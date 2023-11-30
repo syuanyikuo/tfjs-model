@@ -18,7 +18,7 @@ try{
     await model.save('localstorage://CaptchaModel');
 }
 ```
-# Use
+# Code
 ```
 var ENG = 'abcdefghijklmnopqrstuvwxyz'
 
