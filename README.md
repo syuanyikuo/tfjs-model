@@ -1,7 +1,7 @@
 # tfjs_model
 售票系統驗證碼辨識，可以在瀏覽器上運行
 
-範例: [https://syuanyikuo.github.io/tfjs_model/demo.html](https://syuanyikuo.github.io/tfjs_model/demo.html)
+範例: [https://syuanyikuo.github.io/tfjs_model/demo.html](https://syuanyikuo.github.io/tfjs-model/demo.html)
 
 # Requirements
 
@@ -18,7 +18,7 @@ try{
     model = await tf.loadLayersModel('localstorage://CaptchaModel');
     console.log('Load local model')
 }catch(event){
-    model = await tf.loadLayersModel(tf.io.browserHTTPRequest('https://raw.githubusercontent.com/syuanyikuo/tfjs_model/main/tixcraft/model.json'));
+    model = await tf.loadLayersModel(tf.io.browserHTTPRequest('https://raw.githubusercontent.com/syuanyikuo/tfjs-model/main/tixcraft/model.json'));
     console.log('Load github model')
     await model.save('localstorage://CaptchaModel');
 }
