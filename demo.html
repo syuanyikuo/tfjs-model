@@ -88,7 +88,7 @@
 				console.log('Load local model')
 				predict_verifyCode()
 			}catch(event){
-				model = await tf.loadLayersModel(tf.io.browserHTTPRequest('https://raw.githubusercontent.com/syuanyikuo/tfjs_model/main/tixcraft/model.json'));
+				model = await tf.loadLayersModel(tf.io.browserHTTPRequest('https://raw.githubusercontent.com/syuanyikuo/tfjs-model/main/tixcraft/model.json'));
 				console.log('Load github model')
 				await model.save('localstorage://CaptchaModel');
 				predict_verifyCode()
