@@ -1,4 +1,4 @@
-# tfjs_model
+# tfjs-model
 售票系統驗證碼辨識，可以在瀏覽器上運行
 
 範例: [https://syuanyikuo.github.io/tfjs_model/demo.html](https://syuanyikuo.github.io/tfjs-model/demo.html)
